@@ -9,7 +9,7 @@ namespace Application.Common.Mapping
     {
         public MappingProfile()
         {
-            ApplyMappingsFromAssembly
+            ApplyMappingsFromAssembly(Assembly.GetExecutingAssembly());
         }
 
         private void ApplyMappingsFromAssembly(Assembly assembly)
